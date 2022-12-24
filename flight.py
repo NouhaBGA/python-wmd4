@@ -19,3 +19,4 @@ class Flight:
 
     def __str__(self):
         return f'{self.src_code} {self.dst_code} {self.duration}'
+

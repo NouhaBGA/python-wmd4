@@ -25,5 +25,3 @@ class Airport:
 
 # airport = Airport('LA', 'LAA')
 # print(airport.name)
-#
-# print(airport.__dict__)

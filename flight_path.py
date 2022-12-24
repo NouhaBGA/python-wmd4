@@ -33,4 +33,3 @@ class FlightPath:
 
     def duration(self) -> float:
         return sum(flight.duration for flight in self.l_flights)
-

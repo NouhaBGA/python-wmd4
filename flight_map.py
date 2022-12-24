@@ -182,23 +182,23 @@ flight_map.import_airports("aeroports.csv")
 flight_map.import_flights("flights.csv")
 
 # Question D
-# for airport in flight_map.airports():
-#     print(f"{airport.name} {airport.code} {airport.lat} {airport.long}")
+for airport in flight_map.airports():
+    print(f"{airport.name} {airport.code} {airport.lat} {airport.long}")
 
-# for flight in flight_map.flights():
-#     print(f"[{flight.src_code} {flight.dst_code} {flight.duration}]")
+for flight in flight_map.flights():
+    print(f"[{flight.src_code} {flight.dst_code} {flight.duration}]")
 
 # Question E
-# airport = flight_map.airport_find("CDG")
-# if airport is not None:
-#     print(f"Aéroport trouvé: {airport.name} {airport.code} {airport.lat} {airport.long}")
-# else:
-#     print("Aéroport non trouvé")
+airport = flight_map.airport_find("CDG")
+if airport is not None:
+    print(f"Aéroport trouvé: {airport.name} {airport.code} {airport.lat} {airport.long}")
+else:
+    print("Aéroport non trouvé")
 
 
 # Question F
-# print(flight_map.flight_exist("SYD", "NBO"))  # True
-# print(flight_map.flight_exist("MIA", "DFW"))  # False
+print(flight_map.flight_exist("SYD", "NBO"))  # True
+print(flight_map.flight_exist("MIA", "DFW"))  # False
 
 # Question G
 flights = flight_map.flights_where("ICN")
